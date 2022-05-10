@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>toDOList</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="bg-dark py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">ToDoList</a>
+      </div>
+    </header>
+
+    <!-- INPUT CON TASTO AGGIUNGI -->
+
+    <main>
+      <div class="input-group my-3 container">
+        <input
+          type="text"
+          class="form-control"
+          name="task"
+          placeholder="Aggiungi un task ..."
+          aria-describedby="basic-addon2"
+        />
+        <div class="input-group-append">
+          <!-- onclick="buildList()" -->
+          <button type="button" id="add_btn" class="btn btn-outline-secondary">
+            Aggiungi
+          </button>
+        </div>
+      </div>
+
+      <!-- GROUP LIST -->
+      <div class="align-items-center">
+        <ul id="unordered-list" class="list-group container"></ul>
+        <div class="text-center">
+          <button class="clear-list-btn btn btn-outline-danger my-2">
+            <strong>CLEAR TASKS LIST</strong>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

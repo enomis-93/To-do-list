@@ -1,0 +1,8 @@
+.clear-list-btn {
+  display: none;
+}
+
+.show-clear-btn {
+  display: inline-block;
+  text-align: center;
+}
